@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="imagenes/logos/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imagenes/logos/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imagenes/logos/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imagenes/logos/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imagenes/logos/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imagenes/logos/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imagenes/logos/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imagenes/logos/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagenes/logos/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="imagenes/logos/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="imagenes/logos/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/logos/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="imagenes/logos/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>El Progreso</title> 
+</head>
+<body>
+
+  <header class="fixed-top">
+    <div class="coontainer navegacion">
+      <nav class="container-lg">
+      <div class="d-flex justify-content-between py-3">
+        <div class="d-flex">
+          <a class="btn-hamburguesa" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">menu</a>
+          <a href="#" class="logo">logo</a>
+        </div>
+        <div class="d-flex">
+          <a href="#" class="btn-busqueda mx-2">buscar</a> 
+          <a href="#" class="icn-carrito position-relative" id="icncarrito">carrito
+          <span class="notificacion-carrito"></span>
+          </a>
+        </div>
+      </div>  
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="d-block">
+            <span class="perfil text-white fs-4">Perfil</span>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div class="list-group">
+            <ul class="list-unstyled">
+              <li><a class="list-group-item border-0 fs-5" href="#catalogo">Nuestro catálogo</a></li>
+              <li><a class="list-group-item border-0 fs-5" href="#destacados">Productos destacados</a></li>
+              <li><a class="list-group-item border-0 fs-5" href="#descuento">Productos en descuento</a></li>
+              <li><a class="list-group-item border-0 fs-5" href="#productos">Todos los productos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-lg p-0">
+
+    <div class="container-fluid p-0 p-relative">
+      <div class="position-absolute">
+        <button class="btn btn-primary ver-mas">Ver más</button>
+      </div>
+      <div id="carouselExampleIndicators" class="carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img class="img-fluid w-100" src="imagenes/slider-banner/slider-1.jpg" alt="fondo de una piscina con un inflable">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img class="img-fluid w-100" src="imagenes/slider-banner/slider-2.jpg" alt="fondo de una piscina con un inflable">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img class="img-fluid w-100" src="imagenes/slider-banner/slider-3.jpg" alt="fondo de una piscina con un inflable">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="catalogo" class="mt-5">
+      <header class="titulo-seccion mb-3">
+        <h2 class="text-white d-inline-block py-2 px-4 wow animate__animated animate__fadeInLeft">Nuestro Catálogo</h2>
+      </header>
+      <div class="container-fluid">
+        <div class="row p-0 d-flex justify-content-between categorias">
+          <div class="col-12 col-md-6 cuadrado py-5 d-flex">
+            <h3 class="text-white text-center m-auto">Limpieza de piletas</h3>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-12 col-md-6 cuadrado py-5">
+                <h3 class="text-white text-center">Cloro</h3>
+              </div>
+              <div class="col-12 col-md-6 cuadrado py-5">
+                <h3 class="text-white text-center">Accesorios</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 cuadrado py-5">
+                <h3 class="text-white text-center">Carbonería</h3>
+              </div>
+              <div class="col-12 col-md-6 cuadrado py-5">
+                <h3 class="text-white text-center">Piletas</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destacados" class="my-5">
+      <header id="destacados" class="titulo-seccion">
+        <h2 class="text-white d-inline-block py-2 px-4 wow animate__animated animate__fadeInLeft">Productos destacados</h2>
+      </header>
+      <div class="responsive carousel">
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/cloro-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/cloro-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/cloro.png" alt="foto de bidon de cloro">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Bidón de cloro</h3>
+            <span class="fw-bold">$ 900</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/carbon-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/carbon-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/carbon.png" alt="foto de una bolsa de carbon">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Bolsa de carbón</h3>
+            <span class="fw-bold">$ 700</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/limpiafondo-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/limpiafondo-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/limpiafondo.png" alt="foto de limpiafondo">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Limpiafondo</h3>
+            <span class="fw-bold">$ 2.700</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/manguera-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/manguera-mediana.png" alt="foto de una bolsa de carbonna"">
+              <img class="img-fluid w-100" src="imagenes/productos/manguera.png" alt="foto de una manguera para piletas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Manguera</h3>
+            <span class="fw-bold">$ 350</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/phmas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/phmas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/phmas.png" alt="foto de regulador de ph mas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Regulador de ph</h3>
+            <span class="fw-bold">$ 1.570</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/sacahojas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/sacahojas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/sacahojas.png" alt="foto de sacahojas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Sacahojas</h3>
+            <span class="fw-bold">$ 1.200</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/clarificador-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/clarificador-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/clarificador.png" alt="foto de clarificador">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Clarificador</h3>
+            <span class="fw-bold">$ 1.940</span>
+          </div>
+        </div>
+        <div class="productos-carousel m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/motor-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/motor-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/motor.png" alt="foto de un motor">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Motor</h3>
+            <span class="fw-bold">$ 14.500</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="descuento" class="my-5">
+      <header id="destacados" class="titulo-seccion">
+        <h2 class="text-white d-inline-block py-2 px-4 wow animate__animated animate__fadeInLeft">Productos en descuento</h2>
+      </header>
+      <div class="responsive carousel">
+        <div class="productos-carousel descuento m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/carbon-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/carbon-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/carbon.png" alt="foto de una bolsa de carbon">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Bolsa de carbón</h3>
+            <span class="fw-bold text-decoration-line-through">$ 700</span><span class="fw-bold"> 620</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/phmas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/phmas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/phmas.png" alt="foto de regulador de ph mas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Regulador de ph</h3>
+            <span class="fw-bold text-decoration-line-through">$ 1.570</span><span class="fw-bold"> 1.340</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/clarificador-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/clarificador-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/clarificador.png" alt="foto de clarificador">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Clarificador</h3>
+            <span class="fw-bold text-decoration-line-through">$ 1.940</span><span class="fw-bold"> 1.710</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/limpiafondo-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/limpiafondo-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/limpiafondo.png" alt="foto de limpiafondo">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Limpiafondo</h3>
+            <span class="fw-bold text-decoration-line-through">$ 2.700</span><span class="fw-bold"> 2.360</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/manguera-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/manguera-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/manguera.png" alt="foto de una manguera para piletas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Manguera</h3>
+            <span class="fw-bold text-decoration-line-through">$ 350</span><span class="fw-bold"> 320</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento m-3 rounded-3">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/sacahojas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/sacahojas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/sacahojas.png" alt="foto de sacahojas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Sacahojas</h3>
+            <span class="fw-bold text-decoration-line-through">$ 1.200</span><span class="fw-bold"> 1.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos">
+      <header id="destacados" class="titulo-seccion">
+        <h2 class="text-white d-inline-block py-2 px-4 wow animate__animated animate__fadeInLeft mb-4">Todos los productos</h2>
+      </header>
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/boya-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/boya-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/boya.png" alt="foto de boya">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Boya</h3>
+            <span class="fw-bold">$ 600</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/boya-satelite-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/boya-satelite-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/boya-satelite.png" alt="foto de boya satelite">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Boya satélite</h3>
+            <span class="fw-bold">$ 870</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/carbon-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/carbon-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/carbon.png" alt="foto de una bolsa de carbon">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Bolsa de carbón</h3>
+            <span class="fw-bold text-decoration-line-through">$ 700</span><span class="fw-bold"> 620</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/carbon-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/carbon-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/carbon.png" alt="foto de una bolsa de carbon">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Carbón premium</h3>
+            <span class="fw-bold">$ 900</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/clarificador-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/clarificador-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/clarificador.png" alt="foto de clarificador">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Clarificador</h3>
+            <span class="fw-bold text-decoration-line-through">$ 1.940</span><span class="fw-bold"> 1.710</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/cloro-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/cloro-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/cloro.png" alt="foto de bidon de cloro">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Bidón de cloro</h3>
+            <span class="fw-bold">$ 900</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/leña-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/leña-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/leña.png" alt="foto de leña">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Leña</h3>
+            <span class="fw-bold">$ 500</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/limpiafondo-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/limpiafondo-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/limpiafondo.png" alt="foto de limpiafondo">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Limpiafondo</h3>
+            <span class="fw-bold text-decoration-line-through">$ 2.700</span><span class="fw-bold"> 2.360</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/maderitas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/maderitas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/maderitas.png" alt="foto de maderitas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Maderitas</h3>
+            <span class="fw-bold">$ 300</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/manguera-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/manguera-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/manguera.png" alt="foto de una manguera para piletas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Manguera</h3>
+            <span class="fw-bold text-decoration-line-through">$ 350</span><span class="fw-bold"> 320</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/motor-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/motor-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/motor.png" alt="foto de un motor">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Motor</h3>
+            <span class="fw-bold">$ 14.500</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/phmas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/phmas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/phmas.png" alt="foto de regulador de ph mas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Regulador de ph</h3>
+            <span class="fw-bold text-decoration-line-through">$ 1.570</span><span class="fw-bold"> 1.340</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/phmenos-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/phmenos-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/phmenos.png" alt=" foto de reguladore de ph menos">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Regulador de ph</h3>
+            <span class="fw-bold">$ 1.720</span>
+          </div>
+        </div>
+        <div class="productos-carousel mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/prende-fuego-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/prende-fuego-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/prende-fuego.png" alt="foto de prendefuego">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Prendefuego</h3>
+            <span class="fw-bold">$ 240</span>
+          </div>
+        </div>
+        <div class="productos-carousel descuento mb-4 mb-md-5 rounded-3 col-5 col-md-3 col-lg-3 col-xxl-2">
+          <div class="overflow-hidden">
+            <picture>
+              <source media="(min-width:1400px)" srcset="imagenes/productos/grandes/sacahojas-grande.png">
+              <source media="(min-width:700px)" srcset="imagenes/productos/medianas/sacahojas-mediana.png">
+              <img class="img-fluid w-100" src="imagenes/productos/sacahojas.png" alt="foto de sacahojas">
+            </picture>
+          </div>
+          <div class="p-2 text-white info-producto">
+            <h3 class="h4">Sacahojas</h3>
+            <span class="fw-bold text-decoration-line-through">$ 1.200</span><span class="fw-bold"> 1.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="py-4 mt-5">
+    <a class="logo-footer mx-auto justify-content-center" href="#">logo</a>
+    <small class="text-center text-white d-block pt-3">DWT2B | Interacción con Dispositivos Móbiles | Agustin Gonzalez</small>
+  </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>  
+   
+    <script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+    const el = document.createElement('pwa-update');
+    document.body.appendChild(el);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $('.responsive').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      arrows: false,
+      autoplay: true,
+      responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+      ]
+      });
+      </script>
+    
+</body>
+</html>
