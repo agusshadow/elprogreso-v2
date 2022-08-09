@@ -1,7 +1,0 @@
-Nombre y apellido: Agustin Gonzalez
-Carrera: Diseño y Programación Web
-Comisión: DWT2B
-Materia: Interacción con Dispositivos Móviles
-profesor: Ricardo Rodriguez
-
-URL del TP: https://pruebas-agus-g.000webhostapp.com/
